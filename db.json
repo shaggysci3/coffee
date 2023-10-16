@@ -3,17 +3,52 @@
     {
       "id": 1,
       "name": "Black Coffee",
-      "description": "Simply coffee with nothing added. Lack of cream and sugar contriubte to better health",
-      "image": "https://i.pinimg.com/originals/dc/d6/aa/dcd6aa7a5afe437780610133faeda56b.png",
+      "description": "Simply coffee with nothing added.",
+      "image": "https://imgur.com/QNt7FEk",
       "likes": 0,
       "sugars": 0,
-      "creamers": 0
+      "creamers": 0,
+      "espresso": 0
     },
     {
       "id": 2,
-      "name": "frap",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 0
+      "name": "Latte",
+      "description": "Made with a shot of espresso, steamed milk, and foam.",
+      "image": "https://imgur.com/w56R06Z",
+      "likes": 0,
+      "sugars": 1,
+      "creamers": 1,
+      "espresso": 1
+    },
+    {
+      "id": 3,
+      "name": "Espresso",
+      "description": "Just a shot of espresso, can be served solo or in other coffee",
+      "image": "https://imgur.com/7GUmko1",
+      "likes": 0,
+      "sugars": 0,
+      "creamers": 0,
+      "espresso": 1
+    },
+    {
+      "id": 4,
+      "name": "Mocha",
+      "description": "Espresso combined with powder, syrup and the choice of milk or cream",
+      "image": "https://imgur.com/oc7Ktjb",
+      "likes": 0,
+      "sugars": 1,
+      "creamers": 2,
+      "espresso": 2
+    },
+    {
+      "id": 5,
+      "name": "Frappe",
+      "description": "Made of espresso, sugar, milk and ice and is blended",
+      "image": "https://imgur.com/IdjAJMQ",
+      "likes": 0,
+      "sugars": 2,
+      "creamers": 2,
+      "espresso": 2
     }
   ]
 }
