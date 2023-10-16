@@ -1,16 +1,19 @@
 {
-  "coffee": [
+  "coffees": [
     {
       "id": 1,
-      "name": "black",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
+      "name": "Black Coffee",
+      "description": "Simply coffee with nothing added. Lack of cream and sugar contriubte to better health",
+      "image": "https://i.pinimg.com/originals/dc/d6/aa/dcd6aa7a5afe437780610133faeda56b.png",
+      "likes": 0,
+      "sugars": 0,
+      "creamers": 0
     },
     {
       "id": 2,
       "name": "frap",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
+      "likes": 0
     }
   ]
 }
