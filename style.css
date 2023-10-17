@@ -5,9 +5,10 @@
   }
 
   body {
+    background-color: #fafafa;
+    font-size: 21px;
     padding: 1rem;
     text-align: center;
-    background-color: #fafafa;
     display: flex;
     flex-direction: column;
     justify-content: center;
