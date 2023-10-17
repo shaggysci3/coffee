@@ -21,3 +21,11 @@
     color: white;
     background-color: rgb(215, 181, 125);
   }
+
+  form {
+    margin: 1rem 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }

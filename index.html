@@ -20,25 +20,46 @@
             <h4  style="color: black; font-size:15px;font-family: sans-serif;"><em>Welcome to our coffee shop!</em>
             </h4>
         </header>
-       
+
             <h2 style="color: rgb(204, 87, 87); font-size:40px;font-family: sans-serif;">Hot Coffees
             </h2>
             <div id="hot-coffees">
                 <!-- Hot Coffee Images Here -->
             </div>
-        
+
 
             <h2 style="color: rgb(87, 163, 204); font-size:40px;font-family: sans-serif;">Cold Coffees</h2>
             <div id="cold-coffees">
                 <!-- Cold Coffee Images Here -->
             </div>
-        
-        <form id="new coffee">
+
+        <form id="new-coffee">
             <h4>Add New Coffee</h4>
             <label for="name">Name: </label>
-            <label for="description">Description:</label>
+            <input type="text" name="name" id="new-name" />
+
+            <label for="image">Image: </label>
+            <input type="textarea" name="image" id="new-image" />
+
             <label for="price">Price:</label>
-            <label for="likes">Likes:</label>
+            <input type="number" name="price" id="new-price" />
+
+            <label for="price">Creamer:</label>
+            <input type="range" min="1" max="10" value="5" class="slider" id="new-creamer">
+
+            <label for="price">Sugar:</label>
+            <input type="range" min="1" max="10" value="5" class="slider" id="new-sugar">
+
+            <label for="price">Espresso:</label>
+            <input type="range" min="1" max="10" value="5" class="slider" id="new-espresso">
+
+            <label for="price">Milk:</label>
+            <input type="range" min="1" max="10" value="5" class="slider" id="new-milk">
+
+            <label for="description">Description:</label>
+            <textarea name="description" id="new-description"></textarea>
+
+            <input type="submit" value="Add" />
         </form>
 
     </body>
