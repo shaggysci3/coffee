@@ -2,53 +2,143 @@
   "coffees": [
     {
       "id": 1,
-      "name": "Black Coffee",
-      "description": "Simply coffee with nothing added.",
-      "image": "https://imgur.com/QNt7FEk",
+      "name": "Coffee",
+      "description": "Our black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy it warm on a cold day!",
+      "image": "https://imgur.com/hIiVwyh",
       "likes": 0,
-      "sugars": 0,
-      "creamers": 0,
-      "espresso": 0
+      "type": "hot",
+      "ingredients": {
+        "sugars": 0,
+        "creamers": 0,
+        "espresso": 0,
+        "milk": 0
+      }
     },
     {
       "id": 2,
       "name": "Latte",
-      "description": "Made with a shot of espresso, steamed milk, and foam.",
-      "image": "https://imgur.com/w56R06Z",
+      "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Perfect for a chilly day!",
+      "image": "https://imgur.com/yJZqgya",
       "likes": 0,
-      "sugars": 1,
-      "creamers": 1,
-      "espresso": 1
+      "type": "hot",
+      "ingredients": {
+        "sugars": 1,
+        "creamers": 1,
+        "espresso": 1,
+        "milk": 1
+      }
     },
     {
       "id": 3,
       "name": "Espresso",
-      "description": "Just a shot of espresso, can be served solo or in other coffee",
-      "image": "https://imgur.com/7GUmko1",
+      "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Great for those who need a warm shot of energy!",
+      "image": "https://imgur.com/U2x8sSz",
       "likes": 0,
-      "sugars": 0,
-      "creamers": 0,
-      "espresso": 1
+      "type": "hot",
+      "ingredients": {
+        "sugars": 0,
+        "creamers": 0,
+        "espresso": 1,
+        "milk": 0
+      }
     },
     {
       "id": 4,
       "name": "Mocha",
-      "description": "Espresso combined with powder, syrup and the choice of milk or cream",
-      "image": "https://imgur.com/oc7Ktjb",
+      "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Perfect for a cozy cold day!",
+      "image": "https://imgur.com/1fVCXtE",
       "likes": 0,
-      "sugars": 1,
-      "creamers": 2,
-      "espresso": 2
+      "type": "hot",
+      "ingredients": {
+        "sugars": 1,
+        "creamers": 2,
+        "espresso": 2,
+        "milk": 1
+      }
     },
     {
       "id": 5,
-      "name": "Frappe",
-      "description": "Made of espresso, sugar, milk and ice and is blended",
-      "image": "https://imgur.com/IdjAJMQ",
+      "name": "Americano",
+      "description": "Our americano adopts the chocalatey and nutty flavors and aromas of our espresso, but with a less powerful taste. A great way to enjoy a warm boost of caffeine!",
+      "image": "https://imgur.com/1q8rQFp",
       "likes": 0,
-      "sugars": 2,
-      "creamers": 2,
-      "espresso": 2
+      "type": "hot",
+      "ingredients": {
+        "sugars": 1,
+        "creamers": 2,
+        "espresso": 2,
+        "milk": 2
+      }
+    },
+    {
+      "id": 6,
+      "name": "Iced Coffee",
+      "description": "Our iced black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy this on a hot day!",
+      "image": "https://imgur.com/YSxQJiL",
+      "likes": 0,
+      "type": "cold",
+      "ingredients": {
+        "sugars": 0,
+        "creamers": 0,
+        "espresso": 0,
+        "milk": 0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Iced Latte",
+      "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Great for cooling off!",
+      "image": "https://imgur.com/4hZryRA",
+      "likes": 0,
+      "type": "cold",
+      "ingredients": {
+        "sugars": 1,
+        "creamers": 1,
+        "espresso": 1,
+        "milk": 1
+      }
+    },
+    {
+      "id": 8,
+      "name": "Iced Espresso",
+      "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Enjoy it iced for a quick cool boost of caffeine!",
+      "image": "https://imgur.com/QwVEsIB",
+      "likes": 0,
+      "type": "cold",
+      "ingredients": {
+        "sugars": 0,
+        "creamers": 0,
+        "espresso": 1,
+        "milk": 0
+      }
+    },
+    {
+      "id": 9,
+      "name": "Iced Mocha",
+      "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Great cool drink for chocolate lovers!",
+      "image": "https://imgur.com/dZHyhjE",
+      "likes": 0,
+      "type": "cold",
+      "ingredients": {
+        "sugars": 1,
+        "creamers": 2,
+        "espresso": 2,
+        "milk": 1
+      }
+    },
+    {
+      "id": 10,
+      "name": "Frappe",
+      "description": "Our frappe is a fun and refreshing milk and espresso-based blended drink. Enjoy it on a hot day out!",
+      "image": "https://imgur.com/31f4s2c",
+      "likes": 0,
+      "type": "cold",
+      "ingredients": {
+        "sugars": 2,
+        "creamers": 2,
+        "espresso": 2,
+        "milk": 2
+      }
     }
   ]
 }
