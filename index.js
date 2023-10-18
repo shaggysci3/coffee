@@ -29,7 +29,8 @@ const displayCoffee = () => {
         // });
     })
 }
-
+const formData = newCoffeeForm.elements
+console.log(formData[0])
 
 const renderHotCoffee = (hotCoffee) => {
     //create divs and img tags for the hot coffie
@@ -40,7 +41,9 @@ const renderHotCoffee = (hotCoffee) => {
     coffeeImg.src = hotCoffee.image;
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
-
+    coffeeImg.addEventListener("click", ()=>{
+        
+    })
     if (hotCoffee.type === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
         hotCoffees.appendChild(coffeeDiv);
@@ -49,6 +52,7 @@ const renderHotCoffee = (hotCoffee) => {
         coldCoffees.appendChild(coffeeDiv);
 
     }
+
     
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
