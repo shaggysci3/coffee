@@ -47,17 +47,25 @@
             <label for="new-price">Price:</label>
             <input type="number" name="price" id="new-price" />
 
+
             <label for="new-creamer">Creamer:</label>
             <input id="new-creamer" type="range" min="1" max="10" value="5" class="slider">
 
             <label for="new-sugar">Sugar:</label>
-            <input  id="new-sugar" type="range" min="1" max="10" value="5" class="slider">
+            <input id="new-sugar" type="range" min="1" max="10" value="5" class="slider">
 
             <label for="new-espresso">Espresso:</label>
-            <input  id="new-espresso" type="range" min="1" max="10" value="5" class="slider" >
+            <input id="new-espresso" type="range" min="1" max="10" value="5" class="slider" >
 
             <label for="new-milk">Milk:</label>
             <input id="new-milk" type="range" min="1" max="10" value="5" class="slider">
+
+            <fieldset id="drinkTemp"><br>
+                <input id="hotTemp" type="radio" value="hot" name="drinkTemp">
+                <label for="hotTemp">Hot</label>
+                <input id="coldTemp" type="radio" value="cold" name="drinkTemp">
+                <label for="coldTemp">Cold</label>
+            </fieldset><br>
 
             <label for="new-description">Description:</label>
             <textarea name="description" id="new-description"></textarea>
