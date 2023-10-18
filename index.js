@@ -18,14 +18,14 @@ const displayCoffee = () => {
 
             data.forEach(hotCoffee => {
                     renderHotCoffee(hotCoffee)
-                    console.log(hotCoffee.type)
-                
+                    console.log(hotCoffee.image)
+
             });
-        
-        
+
+
         // data.forEach(hotCoffee => {
         //     renderHotCoffee(hotCoffee)
-            
+
         // });
     })
 }
@@ -51,7 +51,7 @@ const renderHotCoffee = (hotCoffee) => {
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
     coffeeImg.addEventListener("click", ()=>{
-        
+
     })
     if (hotCoffee.type === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
@@ -62,7 +62,6 @@ const renderHotCoffee = (hotCoffee) => {
 
     }
 
-    
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
 
@@ -70,10 +69,9 @@ const renderHotCoffee = (hotCoffee) => {
 
 const createCoffee = () => {
     const newCoffee = {
-        "id": 0,
-        "name": newCoffeeForm.name.value,
-        "image": newCoffeeForm.image.value,
-        "price": Number(newCoffeeForm.price.value),
+        "name": newCoffeeForm["new-name"].value,
+        "image": newCoffeeForm["new-image"].value,
+        "price": Number(newCoffeeForm["new-price"].value),
         "creamer": Number(newCoffeeForm["new-creamer"].value),
         "sugar": Number(newCoffeeForm["new-sugar"].value),
         "espresso": Number(newCoffeeForm["new-espresso"].value),
