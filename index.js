@@ -8,7 +8,7 @@ const displayCoffee = () => {
     .then(resp => resp.json())
     .then((data)=> {
         data.forEach( hotCoffee => {
-            renderHotCoffie(hotCoffee)
+            renderHotCoffee(hotCoffee)
         });
     })
 }
