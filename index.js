@@ -48,11 +48,24 @@ const renderCoffee = (coffeeDrink) => {
 //mouseout
 
     coffeeImg.src = coffeeDrink.image;
+
     coffeeImg.addEventListener("click", ()=>{
-        const detailImg = document.querySelector(".coffee-image")
-        const detailName = document.querySelector(".coffee-name")
-        const DetailDescrip = document.querySelector(".coffee-description")
-        const detailPrice = document.querySelector(".coffee-price")
+
+        console.log(coffeeDrink.id)
+        const detailName = document.getElementById("big-name");
+        detailName.textContent = coffeeDrink.name
+
+        const detailImg = document.getElementById("big-image");
+        detailImg.src = coffeeDrink.image;
+
+        const DetailDescrip =  document.getElementById("big-description");
+        DetailDescrip.textContent = coffeeDrink.description;
+
+        const detailPrice = document.getElementById("big-price");
+        detailPrice.textContent = coffeeDrink.price
+
+        document.getElementById('big-details').style = "display: block;"
+
     })
 
     coffeeImg.addEventListener("dblclick", () =>{
@@ -67,7 +80,7 @@ const renderCoffee = (coffeeDrink) => {
         coldCoffees.appendChild(coffeeDiv);
     }
 
-
+    // json-server --watch db.json
     //augmenting the tag(img) we created
     //hCoffieImg.src = coffeeDrink.
 
