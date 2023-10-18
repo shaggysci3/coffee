@@ -56,13 +56,26 @@ const renderHotCoffee = (hotCoffee) => {
 //mouseout
 
     coffeeImg.src = hotCoffee.image;
-    //  coffeeImg.style.width = 'width:10px';
-    //  coffeeImg.style.height - 'height:10px'
+ 
+
+
     coffeeImg.addEventListener("click", ()=>{
-        const detailImg = document.querySelector(".coffee-image")
-        const detailName = document.querySelector(".coffee-name")
-        const DetailDescrip = document.querySelector(".coffee-description")
-        const detailPrice = document.querySelector(".coffee-price")
+
+        console.log(hotCoffee.id)
+        const detailName = document.getElementById("big-name");
+        detailName.textContent = hotCoffee.name
+
+        const detailImg = document.getElementById("big-image");
+        detailImg.src = hotCoffee.image;
+
+        const DetailDescrip =  document.getElementById("big-description");
+        DetailDescrip.textContent = hotCoffee.description;
+
+        const detailPrice = document.getElementById("big-price");
+        detailPrice.textContent = hotCoffee.price
+
+        document.getElementById('big-details').style = "display: block;"
+        
     })
     if (hotCoffee.temp === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
@@ -73,7 +86,7 @@ const renderHotCoffee = (hotCoffee) => {
 
     }
 
-
+    // json-server --watch db.json
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
 
