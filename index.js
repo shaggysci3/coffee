@@ -1,4 +1,3 @@
-//gets the hot and cold coffie div so we can append the array of data to it later
 const hotCoffees = document.getElementById("hot-coffees");
 const coldCoffees = document.getElementById("cold-coffees");
 const newCoffeeForm = document.getElementById("new-coffee");
@@ -22,16 +21,12 @@ const displayCoffee = () => {
     })
 }
 
-// formData.forEach(userInput =>{
-//     console.log(userInput)
-// })
-
 const renderCoffee = (coffeeDrink) => {
-    //create divs and img tags for the hot coffie
 
     const coffeeImg = document.createElement("img");
     const coffeeDiv = document.createElement("span");
     coffeeDiv.setAttribute("class", "coffee-pics");
+
 //mouseover
     coffeeImg.addEventListener("mouseover", function (event) {
         const coffeeName = document.getElementById("coffee-name");
@@ -45,10 +40,10 @@ const renderCoffee = (coffeeDrink) => {
         coffeePrice.textContent = coffeeDrink.price;
         coffeeDetails.style.display = "block";
     });
-//mouseout
 
     coffeeImg.src = coffeeDrink.image;
 
+    //click
     coffeeImg.addEventListener("click", ()=>{
 
         console.log(coffeeDrink.id)
@@ -67,7 +62,7 @@ const renderCoffee = (coffeeDrink) => {
         document.getElementById('big-details').style = "display: block;"
 
     })
-
+//dblclick
     coffeeImg.addEventListener("dblclick", () =>{
         likeCoffee(coffeeDrink);
     })
@@ -80,6 +75,7 @@ const renderCoffee = (coffeeDrink) => {
         coldCoffees.appendChild(coffeeDiv);
     }
 
+//delete
     const deleteBttn = document.createElement("button");
     deleteBttn.className = "delete-bttn";
     deleteBttn.textContent = "Delete";
@@ -94,14 +90,10 @@ const renderCoffee = (coffeeDrink) => {
             coffeeDiv.remove();
         });
     });
-
-coffeeDiv.appendChild(deleteBttn);
-    // json-server --watch db.json
-    //augmenting the tag(img) we created
-    //hCoffieImg.src = coffeeDrink.
-
+    coffeeDiv.appendChild(deleteBttn);
 }
 
+//form
 const createCoffee = () => {
     let newCoffee = {
         "name": newCoffeeForm.name.value,
@@ -123,6 +115,7 @@ const createCoffee = () => {
     renderCoffee(newCoffee)
 }
 
+//likes
 const likeCoffee = (drink) => {
     const drinkLikes = drink.likes
     drink.likes += 1

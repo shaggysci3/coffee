@@ -52,11 +52,34 @@ form {
   flex-direction: column;
   display: flex;
   align-items: flex-start;
+    margin-inline-start: 55%;
   margin-inline-start: 10%;
   word-wrap: break-word;
   border:solid 5px rgb(128, 92, 25);
   display:none;
 
+}
+.details{
+  margin: auto;
+  text-align: center;
+
+}
+img.details{
+  position: absolute;
+  bottom: 60px;
+}
+#big-details{
+  width: 40%;
+  position: relative;
+  top: -350px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  margin-inline-start: 10%;
+  word-wrap: break-word;
+  border:solid 5px rgb(128, 92, 25);
+  display:none;
+  
 }
 .details{
   margin: auto;
