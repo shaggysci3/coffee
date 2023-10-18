@@ -29,3 +29,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  #hot-coffees, #cold-coffees {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+  }

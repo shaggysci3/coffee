@@ -5,15 +5,11 @@
         <meta charset="UTF-8">
         <title>My Coffee Shop</title>
         <link rel="stylesheet" href="style.css">
-        <script defer type="text/javascript" src="./src/index.js"></script>
-        <script defer type="text/javascript" src="index.js"></script>
     </head>
-
     <body>
         <header>
             <h1><strong>COFFEE SHOP</strong></h1>
             <div id="coffee-shop">
-                <!-- Coffee Shop Image Here -->
                 <img src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg"
                 alt="a cup of coffee" style="width: 100%; height: auto;">
             </div>
@@ -62,5 +58,16 @@
             <input type="submit" value="Add" />
         </form>
 
+    <!-- Coffee Details Popup -->
+    <div id="coffee-details" style="display: none;";>
+        <h2 id="coffee-name"></h2>
+        <img id="coffee-image" style="width: 100px; height: auto;"/>
+        <p id="coffee-description"></p>
+        <p>Price: $<span id="coffee-price"></span></p>
+
+    </div>
     </body>
+    
+    <script defer type="text/javascript" src="./src/index.js"></script>
+    <script defer type="text/javascript" src="index.js"></script>
 </html>
