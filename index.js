@@ -41,7 +41,10 @@ const renderHotCoffee = (hotCoffee) => {
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
     coffeeImg.addEventListener("click", ()=>{
-        console.log('hello')
+        const detailImg = document.querySelector(".coffee-image")
+        const detailName = document.querySelector(".coffee-name")
+        const DetailDescrip = document.querySelector(".coffee-description")
+        const detailPrice = document.querySelector(".coffee-price")
     })
     if (hotCoffee.temp === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
