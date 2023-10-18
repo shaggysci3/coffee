@@ -41,7 +41,11 @@ const renderCoffee = (coffeeDrink) => {
         coffeeDetails.style.display = "block";
     });
 
+    coffeeImg.addEventListener("mouseout", function (event) {
+        coffeeDetails.style.display = "none";
+    });
     coffeeImg.src = coffeeDrink.image;
+
 
     //click
     coffeeImg.addEventListener("click", ()=>{
