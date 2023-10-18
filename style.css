@@ -42,53 +42,39 @@ form {
   width: 300px;
   flex-direction: column;
   border-radius: 25px;
+  margin-inline-start: 60%;
+  
   /* align-items: flex-start; */
 }
 
+
+
 #big-details{
   width: 40%;
-  position: relative;
-  top: -350px;
-  flex-direction: column;
-  display: flex;
-  align-items: flex-start;
-    margin-inline-start: 55%;
-  margin-inline-start: 10%;
-  word-wrap: break-word;
-  border:solid 5px rgb(128, 92, 25);
-  display:none;
-
-}
-.details{
-  margin: auto;
-  text-align: center;
-
-}
-img.details{
   position: absolute;
-  bottom: 60px;
-}
-#big-details{
-  width: 40%;
-  position: relative;
-  top: -350px;
+  top: 2200px; 
   flex-direction: column;
   display: flex;
   align-items: flex-start;
   margin-inline-start: 10%;
   word-wrap: break-word;
   border:solid 5px rgb(128, 92, 25);
-  display:none;
+  
+  border-radius: 30px;
   
 }
 .details{
   margin: auto;
   text-align: center;
-
+  color: white;
+  line-height: 1.5;
+}
+p#problemChild{
+  display: none;
 }
 img.details{
   position: absolute;
-  bottom: 60px;
+  bottom: 86px;
 }
 
 #hot-coffees,

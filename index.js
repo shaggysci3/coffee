@@ -59,7 +59,8 @@ const renderCoffee = (coffeeDrink) => {
         const detailPrice = document.getElementById("big-price");
         detailPrice.textContent = coffeeDrink.price
 
-        document.getElementById('big-details').style = "display: block;"
+        document.getElementById('problemChild').style = "display: block;"
+        
 
     })
 //dblclick
