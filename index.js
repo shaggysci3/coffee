@@ -7,6 +7,7 @@ const coffeeDetails = document.getElementById("coffee-details");
 newCoffeeForm.addEventListener("submit", (e) => {
     e.preventDefault();
     createCoffee();
+    newCoffeeForm.reset();
 });
 
 //console.log(coldCoffee)
@@ -44,10 +45,10 @@ const renderHotCoffee = (hotCoffee) => {
     coffeeImg.addEventListener("click", ()=>{
 
     })
-    if (hotCoffee.type === 'hot'){
+    if (hotCoffee.temp === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
         hotCoffees.appendChild(coffeeDiv);
-    }else if (hotCoffee.type ==='cold') {
+    }else if (hotCoffee.temp ==='cold') {
         coffeeDiv.appendChild(coffeeImg);
         coldCoffees.appendChild(coffeeDiv);
 
@@ -67,8 +68,10 @@ const createCoffee = () => {
         "sugar": Number(newCoffeeForm["new-sugar"].value),
         "espresso": Number(newCoffeeForm["new-espresso"].value),
         "milk": Number(newCoffeeForm["new-milk"].value),
+        "temp": newCoffeeForm["drinkTemp"].value,
         "description": newCoffeeForm["new-description"].value
     };
+    renderHotCoffee(newCoffee)
 }
 
 displayCoffee();
