@@ -3,6 +3,8 @@ const hotCoffees = document.getElementById("hot-coffees");
 const coldCoffees = document.getElementById("cold-coffees");
 const newCoffeeForm = document.getElementById("new-coffee");
 const coffeeDetails = document.getElementById("coffee-details");
+const formData = newCoffeeForm.elements
+
 
 newCoffeeForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -19,19 +21,24 @@ const displayCoffee = () => {
 
             data.forEach(hotCoffee => {
                     renderHotCoffee(hotCoffee)
-                    console.log(hotCoffee.image)
-
+                    console.log(hotCoffee.type)
+                
             });
-
-
+        
+        
         // data.forEach(hotCoffee => {
         //     renderHotCoffee(hotCoffee)
-
+            
         // });
     })
 }
-const formData = newCoffeeForm.elements
-console.log(formData[0])
+
+// formData.forEach(userInput =>{
+//     console.log(userInput)
+// })
+
+    
+
 
 const renderHotCoffee = (hotCoffee) => {
     //create divs and img tags for the hot coffie
@@ -43,7 +50,7 @@ const renderHotCoffee = (hotCoffee) => {
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
     coffeeImg.addEventListener("click", ()=>{
-
+        console.log('hello')
     })
     if (hotCoffee.temp === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
@@ -54,6 +61,7 @@ const renderHotCoffee = (hotCoffee) => {
 
     }
 
+    
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
 
@@ -61,9 +69,10 @@ const renderHotCoffee = (hotCoffee) => {
 
 const createCoffee = () => {
     const newCoffee = {
-        "name": newCoffeeForm["new-name"].value,
-        "image": newCoffeeForm["new-image"].value,
-        "price": Number(newCoffeeForm["new-price"].value),
+        "id": 0,
+        "name": newCoffeeForm.name.value,
+        "image": newCoffeeForm.image.value,
+        "price": Number(newCoffeeForm.price.value),
         "creamer": Number(newCoffeeForm["new-creamer"].value),
         "sugar": Number(newCoffeeForm["new-sugar"].value),
         "espresso": Number(newCoffeeForm["new-espresso"].value),
