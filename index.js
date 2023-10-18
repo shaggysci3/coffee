@@ -81,8 +81,19 @@ const renderCoffee = (coffeeDrink) => {
     }
 
     const deleteBttn = document.createElement("button");
-deleteBttn.className = "delete-bttn";
-deleteBttn.textContent = "Delete";
+    deleteBttn.className = "delete-bttn";
+    deleteBttn.textContent = "Delete";
+    deleteBttn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const coffeeId = coffeeDrink.id;
+        fetch(`http://localhost:3000/coffees/${coffeeId}`, {
+            method: "DELETE",
+        })
+        .then((resp) => resp.json())
+        .then(() => {
+            coffeeDiv.remove();
+        });
+    });
 
 coffeeDiv.appendChild(deleteBttn);
     // json-server --watch db.json
