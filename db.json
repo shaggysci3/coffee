@@ -6,7 +6,7 @@
       "description": "Our black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy it warm on a cold day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/blackcoffee.png?raw=true",
       "price": 0.99,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
@@ -21,7 +21,7 @@
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Perfect for a chilly day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/latte.png?raw=true",
       "price": 3.99,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -36,7 +36,7 @@
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Great for those who need a warm shot of energy!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/espresso.png?raw=true",
       "price": 1.49,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
@@ -51,7 +51,7 @@
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Perfect for a cozy cold day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/mocha.png?raw=true",
       "price": 2.99,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -66,7 +66,7 @@
       "description": "Our americano adopts the chocalatey and nutty flavors and aromas of our espresso, but with a less powerful taste. A great way to enjoy a warm boost of caffeine!",
       "image": "https://raw.githubusercontent.com/shaggysci3/coffee/main/images/americano.png?raw=true",
       "price": 2.49,
-      "likes": 0,
+      "likes": 11,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -81,7 +81,7 @@
       "description": "Our iced black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy this on a hot day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedcoffee.png?raw=true",
       "price": 0.99,
-      "likes": 0,
+      "likes": 4,
       "temp": "cold",
       "ingredients": {
         "sugars": 0,
@@ -96,7 +96,7 @@
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Great for cooling off!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedlatte.png?raw=true",
       "price": 3.99,
-      "likes": 0,
+      "likes": 1,
       "temp": "cold",
       "ingredients": {
         "sugars": 1,
@@ -111,7 +111,7 @@
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Enjoy it iced for a quick cool boost of caffeine!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedespresso.png?raw=true",
       "price": 1.49,
-      "likes": 0,
+      "likes": 2,
       "temp": "cold",
       "ingredients": {
         "sugars": 0,
@@ -126,7 +126,7 @@
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Great cool drink for chocolate lovers!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedmocha.png?raw=true",
       "price": 2.99,
-      "likes": 0,
+      "likes": 2,
       "temp": "cold",
       "ingredients": {
         "sugars": 1,
@@ -141,7 +141,7 @@
       "description": "Our frappe is a fun and refreshing milk and espresso-based blended drink. Enjoy it on a hot day out!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/frappe.png?raw=true",
       "price": 3.49,
-      "likes": 0,
+      "likes": 4,
       "temp": "cold",
       "ingredients": {
         "sugars": 2,
@@ -149,30 +149,6 @@
         "espresso": 2,
         "milk": 2
       }
-    },
-    {
-      "name": "Caramel Frappacino",
-      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.allrecipes.com%2Fthmb%2Fcb1Zf7kTp5QkiMA0GBj8ppsrZx8%3D%2F1500x0%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2F235850-starbucks-caramel-frappuccino-copycat-recipe-DDMFS-4x3-227a1e47f46643dcb4708e775a250bca.jpg&tbnid=EJL-Z-QWLekmCM&vet=12ahUKEwjMs7Ozl4CCAxV9GGIAHavGC6YQMygBegUIARC7AQ..i&imgrefurl=https%3A%2F%2Fwww.allrecipes.com%2Frecipe%2F235850%2Fstarbucks-caramel-frappuccino-copycat-recipe%2F&docid=AjGOHYhHWDldUM&w=1500&h=1125&q=caramel%20frappuccino&ved=2ahUKEwjMs7Ozl4CCAxV9GGIAHavGC6YQMygBegUIARC7AQ",
-      "price": 20,
-      "creamer": 8,
-      "sugar": 10,
-      "espresso": 5,
-      "milk": 9,
-      "temp": "cold",
-      "description": "Nice cold drink",
-      "id": 11
-    },
-    {
-      "name": "dfdsf",
-      "image": "https://totallythebomb.com/wp-content/uploads/2020/08/IMG_0705-1-480x480.jpg",
-      "price": -122,
-      "creamer": 5,
-      "sugar": 5,
-      "espresso": 5,
-      "milk": 5,
-      "temp": "hot",
-      "description": "sdsds",
-      "id": 12
     }
   ]
 }

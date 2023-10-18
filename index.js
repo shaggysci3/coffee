@@ -12,15 +12,12 @@ newCoffeeForm.addEventListener("submit", (e) => {
     newCoffeeForm.reset();
 });
 
-//console.log(coldCoffee)
-//test
-
 const displayCoffee = () => {
     fetch('http://localhost:3000/coffees')
     .then(resp => resp.json())
     .then((data)=> {
-        data.forEach(hotCoffee => {
-                renderHotCoffee(hotCoffee)
+        data.forEach(coffeeDrink => {
+            renderCoffee(coffeeDrink)
         });
     })
 }
@@ -29,17 +26,12 @@ const displayCoffee = () => {
 //     console.log(userInput)
 // })
 
-
-
-    
-
-
-const renderHotCoffee = (hotCoffee) => {
+const renderCoffee = (coffeeDrink) => {
     //create divs and img tags for the hot coffie
 
     const coffeeImg = document.createElement("img");
-    const coffeeDiv = document.createElement("div");
-
+    const coffeeDiv = document.createElement("span");
+    coffeeDiv.setAttribute("class", "coffee-pics");
 //mouseover
     coffeeImg.addEventListener("mouseover", function (event) {
         const coffeeName = document.getElementById("coffee-name");
@@ -47,48 +39,55 @@ const renderHotCoffee = (hotCoffee) => {
         const coffeeDescription = document.getElementById("coffee-description");
         const coffeePrice = document.getElementById("coffee-price");
 
-        coffeeName.textContent = hotCoffee.name;
-        coffeeImage.src = hotCoffee.image;
-        coffeeDescription.textContent = hotCoffee.description;
-        coffeePrice.textContent = hotCoffee.price;
+        coffeeName.textContent = coffeeDrink.name;
+        coffeeImage.src = coffeeDrink.image;
+        coffeeDescription.textContent = coffeeDrink.description;
+        coffeePrice.textContent = coffeeDrink.price;
         coffeeDetails.style.display = "block";
     });
 //mouseout
 
-    coffeeImg.src = hotCoffee.image;
- 
-
+    coffeeImg.src = coffeeDrink.image;
 
     coffeeImg.addEventListener("click", ()=>{
 
-        console.log(hotCoffee.id)
+        console.log(coffeeDrink.id)
         const detailName = document.getElementById("big-name");
-        detailName.textContent = hotCoffee.name
+        detailName.textContent = coffeeDrink.name
 
         const detailImg = document.getElementById("big-image");
-        detailImg.src = hotCoffee.image;
+        detailImg.src = coffeeDrink.image;
 
         const DetailDescrip =  document.getElementById("big-description");
-        DetailDescrip.textContent = hotCoffee.description;
+        DetailDescrip.textContent = coffeeDrink.description;
 
         const detailPrice = document.getElementById("big-price");
-        detailPrice.textContent = hotCoffee.price
+        detailPrice.textContent = coffeeDrink.price
 
         document.getElementById('big-details').style = "display: block;"
-        
+
     })
-    if (hotCoffee.temp === 'hot'){
+
+    coffeeImg.addEventListener("dblclick", () =>{
+        likeCoffee(coffeeDrink);
+    })
+
+    if (coffeeDrink.temp === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
         hotCoffees.appendChild(coffeeDiv);
-    }else if (hotCoffee.temp ==='cold') {
+    } else if (coffeeDrink.temp ==='cold') {
         coffeeDiv.appendChild(coffeeImg);
         coldCoffees.appendChild(coffeeDiv);
-
     }
 
+    const deleteBttn = document.createElement("button");
+deleteBttn.className = "delete-bttn";
+deleteBttn.textContent = "Delete";
+
+coffeeDiv.appendChild(deleteBttn);
     // json-server --watch db.json
     //augmenting the tag(img) we created
-    //hCoffieImg.src = hotCoffee.
+    //hCoffieImg.src = coffeeDrink.
 
 }
 
@@ -110,7 +109,21 @@ const createCoffee = () => {
         headers: { "Content-Type":"application/json" },
         body:JSON.stringify(newCoffee)
     })
-    renderHotCoffee(newCoffee)
+    renderCoffee(newCoffee)
 }
+
+const likeCoffee = (drink) => {
+    const drinkLikes = drink.likes
+    drink.likes += 1
+
+    fetch(`http://localhost:3000/coffees/${drink.id}`, {
+        method:"PATCH",
+        headers: { "Content-Type":"application/json" },
+        body:JSON.stringify(drink)
+    })
+    window.alert(`You and ${drinkLikes} other people like our ${drink.name}!`);
+}
+
+
 
 displayCoffee();
