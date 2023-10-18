@@ -6,6 +6,7 @@ const coffeeDetails = document.getElementById("coffee-details");
 
 newCoffeeForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    createCoffee();
 });
 
 //console.log(coldCoffee)
@@ -33,8 +34,21 @@ const renderHotCoffee = (hotCoffee) => {
 
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
-    
+
 }
 
+const createCoffee = () => {
+    const newCoffee = {
+        "id": 0,
+        "name": newCoffeeForm.name.value,
+        "image": newCoffeeForm.image.value,
+        "price": newCoffeeForm.price.value,
+        "creamer": newCoffeeForm["new-creamer"].value,
+        "sugar": newCoffeeForm["new-sugar"].value,
+        "espresso": newCoffeeForm["new-espresso"].value,
+        "milk": newCoffeeForm["new-milk"].value,
+        "description": newCoffeeForm["new-description"].value
+    };
+}
 
 displayCoffee();
