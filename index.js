@@ -13,6 +13,7 @@ newCoffeeForm.addEventListener("submit", (e) => {
 });
 
 //console.log(coldCoffee)
+//test
 
 const displayCoffee = () => {
     fetch('http://localhost:3000/coffees')
