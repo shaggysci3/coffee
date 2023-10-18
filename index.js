@@ -29,8 +29,7 @@ const displayCoffee = () => {
 //     console.log(userInput)
 // })
 
-    //test
-//test 2
+
 
     
 
