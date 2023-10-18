@@ -17,8 +17,7 @@
             </h4>
         </header>
 
-            <h2 style="color: rgb(204, 87, 87);">Warm Drinks
-            </h2>
+            <h2 style="color: rgb(204, 87, 87);">Warm Drinks </h2>
             <div id="hot-coffees">
                 <!-- Hot Coffee Images Here -->
             </div>
@@ -43,42 +42,43 @@
                 <p>Price: $<span id="coffee-price"></span></p>
             </div>
 
-        <form id="new-coffee">
-            <h4>Add New Coffee</h4>
-            <label for="new-name">Name: </label>
-            <input type="text" name="name" id="new-name">
+        <div id="coffee-form">
+            <form id="new-coffee">
+                <h4>Add New Coffee</h4>
+                <label for="new-name">Drink Name: </label>
+                <input type="text" name="name" id="new-name">
 
-            <label for="new-image">Image: </label>
-            <input type="text" name="image" id="new-image">
+                <label for="new-image">Image URL: </label>
+                <input type="text" name="image" id="new-image">
 
-            <label for="new-price">Price:</label>
-            <input type="number" name="price" id="new-price">
+                <label for="new-price">Price:</label>
+                <input type="number" name="price" id="new-price">
 
-            <label for="new-creamer">Creamer:</label>
-            <input id="new-creamer" type="range" min="1" max="10" value="5" class="slider">
+                <label for="new-creamer">Creamer:</label>
+                <input id="new-creamer" type="range" min="1" max="10" value="5" class="slider">
 
-            <label for="new-sugar">Sugar:</label>
-            <input id="new-sugar" type="range" min="1" max="10" value="5" class="slider">
+                <label for="new-sugar">Sugar:</label>
+                <input id="new-sugar" type="range" min="1" max="10" value="5" class="slider">
 
-            <label for="new-espresso">Espresso:</label>
-            <input id="new-espresso" type="range" min="1" max="10" value="5" class="slider">
+                <label for="new-espresso">Espresso:</label>
+                <input id="new-espresso" type="range" min="1" max="10" value="5" class="slider">
 
-            <label for="new-milk">Milk:</label>
-            <input id="new-milk" type="range" min="1" max="10" value="5" class="slider">
+                <label for="new-milk">Milk:</label>
+                <input id="new-milk" type="range" min="1" max="10" value="5" class="slider">
 
-            <fieldset id="drinkTemp"><br>
-                <input id="hotTemp" type="radio" value="hot" name="drinkTemp">
-                <label for="hotTemp">Hot</label>
-                <input id="coldTemp" type="radio" value="cold" name="drinkTemp">
-                <label for="coldTemp">Cold</label>
-            </fieldset><br>
+                <fieldset id="drinkTemp"><br>
+                    <input id="hotTemp" type="radio" value="hot" name="drinkTemp">
+                    <label for="hotTemp">Hot</label>
+                    <input id="coldTemp" type="radio" value="cold" name="drinkTemp">
+                    <label for="coldTemp">Cold</label>
+                </fieldset><br>
 
-            <label for="new-description">Description:</label>
-            <textarea name="description" id="new-description"></textarea>
+                <label for="new-description">Description:</label>
+                <textarea name="description" id="new-description"></textarea><br>
 
-            <input type="submit" value="Add">
-        </form>
-
+                <input type="submit" value="Add Coffee">
+            </form>
+        </div>
 
     </body>
 

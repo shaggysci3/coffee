@@ -12,9 +12,6 @@ newCoffeeForm.addEventListener("submit", (e) => {
     newCoffeeForm.reset();
 });
 
-//console.log(coldCoffee)
-//test
-
 const displayCoffee = () => {
     fetch('http://localhost:3000/coffees')
     .then(resp => resp.json())
@@ -28,11 +25,6 @@ const displayCoffee = () => {
 // formData.forEach(userInput =>{
 //     console.log(userInput)
 // })
-
-
-
-
-
 
 const renderCoffee = (coffeeDrink) => {
     //create divs and img tags for the hot coffie
@@ -61,6 +53,10 @@ const renderCoffee = (coffeeDrink) => {
         const detailName = document.querySelector(".coffee-name")
         const DetailDescrip = document.querySelector(".coffee-description")
         const detailPrice = document.querySelector(".coffee-price")
+    })
+
+    coffeeImg.addEventListener("dblclick", () =>{
+        likeCoffee(coffeeDrink);
     })
 
     if (coffeeDrink.temp === 'hot'){
@@ -96,6 +92,18 @@ const createCoffee = () => {
         body:JSON.stringify(newCoffee)
     })
     renderCoffee(newCoffee)
+}
+
+const likeCoffee = (drink) => {
+    const drinkLikes = drink.likes
+    drink.likes += 1
+
+    fetch(`http://localhost:3000/coffees/${drink.id}`, {
+        method:"PATCH",
+        headers: { "Content-Type":"application/json" },
+        body:JSON.stringify(drink)
+    })
+    window.alert(`You and ${drinkLikes} other people like our ${drink.name}!`);
 }
 
 displayCoffee();

@@ -33,15 +33,16 @@ p {
 }
 
 form {
+  display: flex;
   border: solid 1px;
   margin: auto;
   background-color: rgb(145, 105, 69);
   padding: 15px;
   justify-content: center;
   width: 300px;
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  border-radius: 25px;
+  /* align-items: flex-start; */
 }
 
 #hot-coffees,

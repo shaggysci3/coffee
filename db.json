@@ -6,7 +6,7 @@
       "description": "Our black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy it warm on a cold day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/blackcoffee.png?raw=true",
       "price": 0.99,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
@@ -21,7 +21,7 @@
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Perfect for a chilly day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/latte.png?raw=true",
       "price": 3.99,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -36,7 +36,7 @@
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Great for those who need a warm shot of energy!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/espresso.png?raw=true",
       "price": 1.49,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
@@ -51,7 +51,7 @@
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Perfect for a cozy cold day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/mocha.png?raw=true",
       "price": 2.99,
-      "likes": 0,
+      "likes": 5,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -66,7 +66,7 @@
       "description": "Our americano adopts the chocalatey and nutty flavors and aromas of our espresso, but with a less powerful taste. A great way to enjoy a warm boost of caffeine!",
       "image": "https://raw.githubusercontent.com/shaggysci3/coffee/main/images/americano.png?raw=true",
       "price": 2.49,
-      "likes": 0,
+      "likes": 11,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -81,7 +81,7 @@
       "description": "Our iced black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy this on a hot day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedcoffee.png?raw=true",
       "price": 0.99,
-      "likes": 0,
+      "likes": 4,
       "temp": "cold",
       "ingredients": {
         "sugars": 0,
@@ -96,7 +96,7 @@
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Great for cooling off!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedlatte.png?raw=true",
       "price": 3.99,
-      "likes": 0,
+      "likes": 1,
       "temp": "cold",
       "ingredients": {
         "sugars": 1,
@@ -111,7 +111,7 @@
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Enjoy it iced for a quick cool boost of caffeine!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedespresso.png?raw=true",
       "price": 1.49,
-      "likes": 0,
+      "likes": 2,
       "temp": "cold",
       "ingredients": {
         "sugars": 0,
@@ -126,7 +126,7 @@
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Great cool drink for chocolate lovers!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedmocha.png?raw=true",
       "price": 2.99,
-      "likes": 0,
+      "likes": 2,
       "temp": "cold",
       "ingredients": {
         "sugars": 1,
@@ -141,7 +141,7 @@
       "description": "Our frappe is a fun and refreshing milk and espresso-based blended drink. Enjoy it on a hot day out!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/frappe.png?raw=true",
       "price": 3.49,
-      "likes": 0,
+      "likes": 4,
       "temp": "cold",
       "ingredients": {
         "sugars": 2,
