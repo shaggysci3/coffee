@@ -46,3 +46,17 @@ img {
 fieldset {
   border-style: none;
 }
+
+#coffee-details {
+  position: center;
+  background-color: rgba(236, 206, 183, 0.679);
+  padding: 20px;
+  display: none;
+  align-items: center;
+  text-align: center;
+}
+
+#coffee-details img {
+  width: 500px; 
+  height: auto;
+}
