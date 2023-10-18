@@ -80,6 +80,11 @@ const renderCoffee = (coffeeDrink) => {
         coldCoffees.appendChild(coffeeDiv);
     }
 
+    const deleteBttn = document.createElement("button");
+deleteBttn.className = "delete-bttn";
+deleteBttn.textContent = "Delete";
+
+coffeeDiv.appendChild(deleteBttn);
     // json-server --watch db.json
     //augmenting the tag(img) we created
     //hCoffieImg.src = coffeeDrink.
@@ -118,5 +123,7 @@ const likeCoffee = (drink) => {
     })
     window.alert(`You and ${drinkLikes} other people like our ${drink.name}!`);
 }
+
+
 
 displayCoffee();
