@@ -2,11 +2,6 @@
 const hotCoffees = document.getElementById("hot-coffees");
 const coldCoffees = document.getElementById("cold-coffees");
 const newCoffeeForm = document.getElementById("new-coffee");
-const coffeeDetails = document.getElementById("coffee-details");
-
-newCoffeeForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-});
 
 //console.log(coldCoffee)
 
