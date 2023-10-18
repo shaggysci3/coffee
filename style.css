@@ -4,51 +4,24 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
+  header {
+    padding: 0.5rem;
+    width: 100%;
+    color: white;
+    background-color: rgb(215, 181, 125);
+  }
 
-h1 {
-  font-size: 36px;
-  margin: 0;
-}
+  form {
+    margin: 1rem 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-h4 {
-  font-size: 18px;
-  font-style: italic;
-}
-
-#hot-coffees,
-#cold-coffees {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.coffee-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.coffee-item:hover {
-  transform: scale(1.05);
-}
-
-#coffee-details {
-  display: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  #hot-coffees, #cold-coffees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
