@@ -15,23 +15,41 @@ const displayCoffee = () => {
     fetch('http://localhost:3000/coffees')
     .then(resp => resp.json())
     .then((data)=> {
-        data.forEach(hotCoffee => {
-            renderHotCoffee(hotCoffee)
-        });
+
+            data.forEach(hotCoffee => {
+                    renderHotCoffee(hotCoffee)
+                    console.log(hotCoffee.type)
+                
+            });
+        
+        
+        // data.forEach(hotCoffee => {
+        //     renderHotCoffee(hotCoffee)
+            
+        // });
     })
 }
 
 
 const renderHotCoffee = (hotCoffee) => {
     //create divs and img tags for the hot coffie
+
     const coffeeImg = document.createElement("img");
     const coffeeDiv = document.createElement("div");
 
-    coffeeImg.src =hotCoffee.image;
+    coffeeImg.src = hotCoffee.image;
+    //  coffeeImg.style.width = 'width:10px';
+    //  coffeeImg.style.height - 'height:10px'
 
-    coffeeDiv.appendChild(coffeeImg);
-    hotCoffees.appendChild(coffeeDiv);
+    if (hotCoffee.type === 'hot'){
+        coffeeDiv.appendChild(coffeeImg);
+        hotCoffees.appendChild(coffeeDiv);
+    }else if (hotCoffee.type ==='cold') {
+        coffeeDiv.appendChild(coffeeImg);
+        coldCoffees.appendChild(coffeeDiv);
 
+    }
+    
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
 
