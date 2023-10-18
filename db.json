@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Coffee",
       "description": "Our black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy it warm on a cold day!",
-      "image": "https://imgur.com/hIiVwyh",
+      "image": "/images/blackcoffee.png",
       "likes": 0,
       "type": "hot",
       "ingredients": {
@@ -18,7 +18,7 @@
       "id": 2,
       "name": "Latte",
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Perfect for a chilly day!",
-      "image": "https://imgur.com/yJZqgya",
+      "image": "/images/latte.png",
       "likes": 0,
       "type": "hot",
       "ingredients": {
@@ -32,7 +32,7 @@
       "id": 3,
       "name": "Espresso",
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Great for those who need a warm shot of energy!",
-      "image": "https://imgur.com/U2x8sSz",
+      "image": "/images/espresso.png",
       "likes": 0,
       "type": "hot",
       "ingredients": {
@@ -46,7 +46,7 @@
       "id": 4,
       "name": "Mocha",
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Perfect for a cozy cold day!",
-      "image": "https://imgur.com/1fVCXtE",
+      "image": "/images/mocha.png",
       "likes": 0,
       "type": "hot",
       "ingredients": {
@@ -60,7 +60,7 @@
       "id": 5,
       "name": "Americano",
       "description": "Our americano adopts the chocalatey and nutty flavors and aromas of our espresso, but with a less powerful taste. A great way to enjoy a warm boost of caffeine!",
-      "image": "https://imgur.com/1q8rQFp",
+      "image": "/images/americano.png",
       "likes": 0,
       "type": "hot",
       "ingredients": {
@@ -74,7 +74,7 @@
       "id": 6,
       "name": "Iced Coffee",
       "description": "Our iced black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy this on a hot day!",
-      "image": "https://imgur.com/YSxQJiL",
+      "image": "/images/icedcoffee.png",
       "likes": 0,
       "type": "cold",
       "ingredients": {
@@ -88,7 +88,7 @@
       "id": 7,
       "name": "Iced Latte",
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Great for cooling off!",
-      "image": "https://imgur.com/4hZryRA",
+      "image": "/images/icedlatte.png",
       "likes": 0,
       "type": "cold",
       "ingredients": {
@@ -102,7 +102,7 @@
       "id": 8,
       "name": "Iced Espresso",
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Enjoy it iced for a quick cool boost of caffeine!",
-      "image": "https://imgur.com/QwVEsIB",
+      "image": "/images/icedespresso.png",
       "likes": 0,
       "type": "cold",
       "ingredients": {
@@ -116,7 +116,7 @@
       "id": 9,
       "name": "Iced Mocha",
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Great cool drink for chocolate lovers!",
-      "image": "https://imgur.com/dZHyhjE",
+      "image": "/images/icedmocha.png",
       "likes": 0,
       "type": "cold",
       "ingredients": {
@@ -130,7 +130,7 @@
       "id": 10,
       "name": "Frappe",
       "description": "Our frappe is a fun and refreshing milk and espresso-based blended drink. Enjoy it on a hot day out!",
-      "image": "https://imgur.com/31f4s2c",
+      "image": "/images/frappe.png",
       "likes": 0,
       "type": "cold",
       "ingredients": {
