@@ -21,7 +21,7 @@ h4 {
 }
 
   form {
-    margin: 1rem 0;
+    margin: auto;
     width: 300px;
     display: flex;
     flex-direction: column;
