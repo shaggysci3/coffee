@@ -39,6 +39,15 @@ const renderHotCoffee = (hotCoffee) => {
     const coffeeDiv = document.createElement("div");
 
     coffeeImg.src = hotCoffee.image;
+    coffeeImg.alt = hotCoffee.name;
+
+    coffeeImg.addEventListener("mouseover", () => {
+        displayCoffeeDetails(hotCoffee);
+    });
+    coffeeImg.addEventListener("mouseout", () => {
+        coffeeDetails.style.display = "none";
+    });
+    
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
     coffeeImg.addEventListener("click", ()=>{
