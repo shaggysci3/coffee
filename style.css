@@ -144,3 +144,12 @@ fieldset {
   width: 500px;
   height: auto;
 }
+
+footer {
+  position: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: medium;
+  text-align: right;
+}
