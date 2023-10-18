@@ -36,7 +36,7 @@
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Great for those who need a warm shot of energy!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/espresso.png?raw=true",
       "price": 1.49,
-      "likes": 5,
+      "likes": 6,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
