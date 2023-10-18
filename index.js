@@ -41,6 +41,21 @@ const renderHotCoffee = (hotCoffee) => {
     const coffeeImg = document.createElement("img");
     const coffeeDiv = document.createElement("div");
 
+//mouseover
+    coffeeImg.addEventListener("mouseover", function (event) {
+        const coffeeName = document.getElementById("coffee-name");
+        const coffeeImage = document.getElementById("coffee-image");
+        const coffeeDescription = document.getElementById("coffee-description");
+        const coffeePrice = document.getElementById("coffee-price");
+
+        coffeeName.textContent = hotCoffee.name;
+        coffeeImage.src = hotCoffee.image;
+        coffeeDescription.textContent = hotCoffee.description;
+        coffeePrice.textContent = hotCoffee.price;
+        coffeeDetails.style.display = "block";
+    });
+//mouseout
+
     coffeeImg.src = hotCoffee.image;
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
