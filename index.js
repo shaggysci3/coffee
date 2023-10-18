@@ -18,18 +18,9 @@ const displayCoffee = () => {
     fetch('http://localhost:3000/coffees')
     .then(resp => resp.json())
     .then((data)=> {
-
-            data.forEach(hotCoffee => {
-                    renderHotCoffee(hotCoffee)
-                    console.log(hotCoffee.type)
-                
-            });
-        
-        
-        // data.forEach(hotCoffee => {
-        //     renderHotCoffee(hotCoffee)
-            
-        // });
+        data.forEach(hotCoffee => {
+                renderHotCoffee(hotCoffee)
+        });
     })
 }
 
@@ -37,6 +28,8 @@ const displayCoffee = () => {
 //     console.log(userInput)
 // })
 
+    //test
+//test 2
     
 
 
@@ -65,7 +58,10 @@ const renderHotCoffee = (hotCoffee) => {
     //  coffeeImg.style.width = 'width:10px';
     //  coffeeImg.style.height - 'height:10px'
     coffeeImg.addEventListener("click", ()=>{
-        console.log('hello')
+        const detailImg = document.querySelector(".coffee-image")
+        const detailName = document.querySelector(".coffee-name")
+        const DetailDescrip = document.querySelector(".coffee-description")
+        const detailPrice = document.querySelector(".coffee-price")
     })
     if (hotCoffee.temp === 'hot'){
         coffeeDiv.appendChild(coffeeImg);
@@ -76,15 +72,14 @@ const renderHotCoffee = (hotCoffee) => {
 
     }
 
-    
+
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
 
 }
 
 const createCoffee = () => {
-    const newCoffee = {
-        "id": 0,
+    let newCoffee = {
         "name": newCoffeeForm.name.value,
         "image": newCoffeeForm.image.value,
         "price": Number(newCoffeeForm.price.value),
@@ -95,6 +90,12 @@ const createCoffee = () => {
         "temp": newCoffeeForm["drinkTemp"].value,
         "description": newCoffeeForm["new-description"].value
     };
+
+    fetch('http://localhost:3000/coffees', {
+        method:"POST",
+        headers: { "Content-Type":"application/json" },
+        body:JSON.stringify(newCoffee)
+    })
     renderHotCoffee(newCoffee)
 }
 
