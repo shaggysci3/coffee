@@ -18,18 +18,9 @@ const displayCoffee = () => {
     fetch('http://localhost:3000/coffees')
     .then(resp => resp.json())
     .then((data)=> {
-
-            data.forEach(hotCoffee => {
-                    renderHotCoffee(hotCoffee)
-                    console.log(hotCoffee.type)
-                
-            });
-        
-        
-        // data.forEach(hotCoffee => {
-        //     renderHotCoffee(hotCoffee)
-            
-        // });
+        data.forEach(hotCoffee => {
+                renderHotCoffee(hotCoffee)
+        });
     })
 }
 
@@ -37,7 +28,7 @@ const displayCoffee = () => {
 //     console.log(userInput)
 // })
 
-    
+
 
 
 const renderHotCoffee = (hotCoffee) => {
@@ -61,15 +52,14 @@ const renderHotCoffee = (hotCoffee) => {
 
     }
 
-    
+
     //augmenting the tag(img) we created
     //hCoffieImg.src = hotCoffee.
 
 }
 
 const createCoffee = () => {
-    const newCoffee = {
-        "id": 0,
+    let newCoffee = {
         "name": newCoffeeForm.name.value,
         "image": newCoffeeForm.image.value,
         "price": Number(newCoffeeForm.price.value),
@@ -80,6 +70,12 @@ const createCoffee = () => {
         "temp": newCoffeeForm["drinkTemp"].value,
         "description": newCoffeeForm["new-description"].value
     };
+
+    fetch('http://localhost:3000/coffees', {
+        method:"POST",
+        headers: { "Content-Type":"application/json" },
+        body:JSON.stringify(newCoffee)
+    })
     renderHotCoffee(newCoffee)
 }
 
