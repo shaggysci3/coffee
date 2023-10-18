@@ -91,6 +91,21 @@
       }
     },
     {
+      "id": 7,
+      "name": "Iced Latte",
+      "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Great for cooling off!",
+      "image": "https://github.com/shaggysci3/coffee/blob/main/images/icedlatte.png?raw=true",
+      "price": 3.99,
+      "likes": 1,
+      "temp": "cold",
+      "ingredients": {
+        "sugars": 1,
+        "creamers": 1,
+        "espresso": 1,
+        "milk": 1
+      }
+    },
+    {
       "id": 8,
       "name": "Iced Espresso",
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Enjoy it iced for a quick cool boost of caffeine!",
