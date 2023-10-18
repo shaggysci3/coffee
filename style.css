@@ -36,3 +36,9 @@ h4 {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+
+img {
+  width: 100px;
+  height: 100px;
+}
