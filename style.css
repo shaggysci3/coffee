@@ -36,19 +36,17 @@ p {
 
 form {
   display: flex;
-  border: solid 1px;
+  border: solid 2px;
   margin: auto;
-  background-color: rgb(145, 105, 69);
+  background-color: rgb(171, 147, 126);
   padding: 15px;
   justify-content: center;
   width: 300px;
   flex-direction: column;
   border-radius: 25px;
   margin-inline-start: 60%;
-  
   /* align-items: flex-start; */
 }
-
 
 
 #big-details{
@@ -144,22 +142,21 @@ footer {
   text-align: right;
 }
 
-.coffeeInfo{
-  
+.coffeeInfo{ 
   visibility: hidden;
-    width: 195px;
+    width: auto;
+    height: auto;
     background-color: black;
     color: white;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 20px;
     position: absolute;
     z-index: -1;
-    left: 5%;
-    padding-top: 20px;
+    padding-top: 10px;
     transition: opacity 0.3s;
-    border: solid 5px rgb(128, 92, 25);
-    top: 58%;
-
+    border: solid 5px rgb(189, 171, 139);
+    bottom: 90%;
+    left: 50%;
 }
 
 .delete-bttn{
