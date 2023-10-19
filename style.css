@@ -164,8 +164,7 @@ footer {
     padding-top: 10px;
     transition: opacity 0.3s;
     border: solid 5px rgb(189, 171, 139);
-    top: 60%;
-    left: 35%;
+    top: 85%;
 }
 
 .delete-bttn{
