@@ -24,25 +24,44 @@ const displayCoffee = () => {
 const renderCoffee = (coffeeDrink) => {
 
     const coffeeImg = document.createElement("img");
-    const coffeeDiv = document.createElement("span");
+    const coffeeDiv = document.createElement("div");
     coffeeDiv.setAttribute("class", "coffee-pics");
 
-//mouseover
-    coffeeImg.addEventListener("mouseover", function (event) {
-        const coffeeName = document.getElementById("coffee-name");
-        const coffeeImage = document.getElementById("coffee-image");
-        const coffeeDescription = document.getElementById("coffee-description");
-        const coffeePrice = document.getElementById("coffee-price");
+
+
+    const infoWrap = document.createElement("div")
+    infoWrap.setAttribute("class","coffeeInfo")
+
+        const coffeeName = document.createElement("h1");
+        const coffeeImage = document.createElement("img");
+        const coffeeDescription = document.createElement("p");
+        const coffeePrice = document.createElement("p");
+
+
 
         coffeeName.textContent = coffeeDrink.name;
         coffeeImage.src = coffeeDrink.image;
         coffeeDescription.textContent = coffeeDrink.description;
-        coffeePrice.textContent = coffeeDrink.price;
-        coffeeDetails.style.display = "block";
+        coffeePrice.textContent = `$${coffeeDrink.price}`;
+       
+       // infoWrap.appendChild(coffeeImage)
+        infoWrap.appendChild(coffeeName)
+        //infoWrap.appendChild(coffeeDescription)
+        infoWrap.appendChild(coffeePrice)
+
+
+    
+//mouseover
+    coffeeImg.addEventListener("mouseover", function (event) {
+        infoWrap.style = "visibility: visible ; opacity: 1;"
+
+        
+        
     });
 
     coffeeImg.addEventListener("mouseout", function (event) {
         coffeeDetails.style.display = "none";
+        infoWrap.style = "visibility: hidden ; opacity: 0;"
     });
     coffeeImg.src = coffeeDrink.image;
 
@@ -78,12 +97,13 @@ const renderCoffee = (coffeeDrink) => {
     } else if (coffeeDrink.temp ==='cold') {
         coffeeDiv.appendChild(coffeeImg);
         coldCoffees.appendChild(coffeeDiv);
+
     }
 
 //delete
     const deleteBttn = document.createElement("button");
     deleteBttn.className = "delete-bttn";
-    deleteBttn.textContent = "Delete";
+    deleteBttn.textContent = "X";
     deleteBttn.addEventListener("click", (e) => {
         e.stopPropagation();
         const coffeeId = coffeeDrink.id;
@@ -96,6 +116,8 @@ const renderCoffee = (coffeeDrink) => {
         });
     });
     coffeeDiv.appendChild(deleteBttn);
+    coffeeDiv.appendChild(infoWrap);
+
 }
 
 //form
