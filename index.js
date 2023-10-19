@@ -32,31 +32,27 @@ const renderCoffee = (coffeeDrink) => {
     const infoWrap = document.createElement("div")
     infoWrap.setAttribute("class","coffeeInfo")
 
-        const coffeeName = document.createElement("h1");
+        const coffeeName = document.createElement("h4");
         const coffeeImage = document.createElement("img");
-        const coffeeDescription = document.createElement("p");
         const coffeePrice = document.createElement("p");
 
 
 
         coffeeName.textContent = coffeeDrink.name;
         coffeeImage.src = coffeeDrink.image;
-        coffeeDescription.textContent = coffeeDrink.description;
         coffeePrice.textContent = `$${coffeeDrink.price}`;
-       
-       // infoWrap.appendChild(coffeeImage)
+
         infoWrap.appendChild(coffeeName)
-        //infoWrap.appendChild(coffeeDescription)
         infoWrap.appendChild(coffeePrice)
 
 
-    
+
 //mouseover
     coffeeImg.addEventListener("mouseover", function (event) {
         infoWrap.style = "visibility: visible ; opacity: 1;"
 
-        
-        
+
+
     });
 
     coffeeImg.addEventListener("mouseout", function (event) {
@@ -83,7 +79,7 @@ const renderCoffee = (coffeeDrink) => {
         detailPrice.textContent = coffeeDrink.price
 
         document.getElementById('problemChild').style = "display: block;"
-        
+
 
     })
 //dblclick
