@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+h1,h2,h3,h4,h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
   color: white;
   padding: 10px;
@@ -160,8 +164,8 @@ footer {
     padding-top: 10px;
     transition: opacity 0.3s;
     border: solid 5px rgb(189, 171, 139);
-    bottom: 90%;
-    left: 50%;
+    top: 60%;
+    left: 35%;
 }
 
 .delete-bttn{
