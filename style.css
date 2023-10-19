@@ -9,6 +9,11 @@ header {
   padding: 10px;
 }
 
+nav{
+  color: white;
+  font-size: medium;
+}
+
 h1 {
   font-size: 36px;
   font-style: bold;
@@ -161,9 +166,22 @@ footer {
 
 .delete-bttn{
   position: inherit;
-  background-color: indianred;
-  margin-block-start: -60%;
-  margin-inline-start: -20%;
+  background-color: rgb(195, 54, 54);
+  margin-block-start: -70%;
+  margin-inline-start: -15%;
   border-radius: 5px;
   font-weight: 600;
+}
+
+button {
+  background-color: #cd997b;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #FFA500;
 }

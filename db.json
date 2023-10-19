@@ -46,21 +46,6 @@
       }
     },
     {
-      "id": 4,
-      "name": "Mocha",
-      "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Perfect for a cozy cold day!",
-      "image": "https://github.com/shaggysci3/coffee/blob/main/images/mocha.png?raw=true",
-      "price": 2.99,
-      "likes": 6,
-      "temp": "hot",
-      "ingredients": {
-        "sugars": 1,
-        "creamers": 2,
-        "espresso": 2,
-        "milk": 1
-      }
-    },
-    {
       "id": 5,
       "name": "Americano",
       "description": "Our americano adopts the chocalatey and nutty flavors and aromas of our espresso, but with a less powerful taste. A great way to enjoy a warm boost of caffeine!",
