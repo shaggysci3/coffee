@@ -54,22 +54,21 @@ form {
   flex-direction: column;
   border-radius: 25px;
   margin-inline-start: 60%;
-  /* align-items: flex-start; */
+  align-items: center;
 }
 
 
 #big-details{
-  width: 40%;
-  position: absolute;
+  width: 70%;
   top: 270%; 
   flex-direction: column;
   display: flex;
   align-items: flex-start;
-  margin-inline-start: 10%;
+  margin-inline-start: 15%;
   word-wrap: break-word;
   border:solid 5px rgb(128, 92, 25);
-  
   border-radius: 30px;
+  padding: 25px;
   
 }
 .details{
