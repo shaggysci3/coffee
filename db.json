@@ -6,7 +6,7 @@
       "description": "Our black coffee is an enjoyable balance of sweet, bitter, and acidic notes with no cream, milk, or sweetener added. Enjoy it warm on a cold day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/blackcoffee.png?raw=true",
       "price": 0.99,
-      "likes": 7,
+      "likes": 10,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
@@ -21,7 +21,7 @@
       "description": "Our latte is great for coffee lovers who enjoy the delight of a sweet milk mask. Perfect for a chilly day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/latte.png?raw=true",
       "price": 3.99,
-      "likes": 6,
+      "likes": 7,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -36,7 +36,7 @@
       "description": "Our espresso is strong shot of caffeine with a chocalatey and nutty base and a smooth finish. Great for those who need a warm shot of energy!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/espresso.png?raw=true",
       "price": 1.49,
-      "likes": 7,
+      "likes": 8,
       "temp": "hot",
       "ingredients": {
         "sugars": 0,
@@ -51,7 +51,7 @@
       "description": "Our Mocha is for chocolate-lovers who enjoy a kick of espresso with a milk base. Perfect for a cozy cold day!",
       "image": "https://github.com/shaggysci3/coffee/blob/main/images/mocha.png?raw=true",
       "price": 2.99,
-      "likes": 6,
+      "likes": 8,
       "temp": "hot",
       "ingredients": {
         "sugars": 1,
@@ -161,6 +161,18 @@
       "temp": "hot",
       "description": "15g of protean 1$ per gram",
       "id": 13
+    },
+    {
+      "name": "drink example",
+      "image": "https://as1.ftcdn.net/v2/jpg/03/99/49/26/1000_F_399492699_sMyrpF3GfYB8q096P8op53B6XXWkqiaZ.jpg",
+      "price": 50,
+      "creamer": 5,
+      "sugar": 5,
+      "espresso": 5,
+      "milk": 5,
+      "temp": "cold",
+      "description": "this drink is poggers",
+      "id": 15
     }
   ]
 }
