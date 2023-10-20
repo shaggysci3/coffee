@@ -7,24 +7,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
         <header>
             <h1 style="font-size: 60px;font-family: sans-serif; text-align: center;"><strong>COFFEE SHOP</strong></h1>
-            <div id="Coffee Shop">
-                <img src="https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
-                alt="a cup of coffee" style="width: 100%; height: auto;">
-            </div>
+            <img src="https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
+            alt="a cup of coffee" style="width: 100%; height: auto;">
             <h3 style="font-family: sans-serif;text-align: center;"><em>Welcome to Coffee Shop, where every sip is an adventure!</em>
             </h3>
         </header>
+
         <h5 style="font-size: 15px;font-family: sans-serif; text-align: center;"><em>Double-click your favorite drink to discover your kindred spirits!</em></h5>
 
-            <h2 style="color: rgb(204, 87, 87);">Warm Drinks </h2>
+        <!-- Coffee Details click-->
+          <div id="big-details" >
+            <h1 class= 'details' id="big-name"><em>Click a drink for more details!</em></h1>
+            <img class= 'details' id="big-image" style="width: auto; height: 100px; position: inherit;" />
+            <p class= 'details' id="big-description"></p>
+            <p id = 'problemChild' class= 'details' >Price: $<span id="big-price"></span></p>
+        </div>
+
+        <h2 style="color: rgb(204, 87, 87);">Warm Drinks </h2>
+
             <div id="hot-coffees">
                 <!-- Hot Coffee Images Here -->
             </div>
 
 
-            <h2 style="color: rgb(87, 163, 204);">Cold Drinks</h2>
+        <h2 style="color: rgb(87, 163, 204);">Cold Drinks</h2>
             <div id="cold-coffees">
                 <!-- Cold Coffee Images Here -->
             </div>
@@ -37,17 +46,10 @@
                 <p>Price: $<span id="coffee-price"></span></p>
             </div>
 
-            <!-- Coffee Details click-->
-            <div id="big-details" >
-                <h1 class= 'details' id="big-name">Click a drink for more details!</h1>
-                <img class= 'details' id="big-image" style="width: 100px; height: auto;" />
-                <p class= 'details' id="big-description"></p>
-                <p id = 'problemChild' class= 'details' >Price: $<span id="big-price"></span></p>
-            </div>
 
         <div id="coffee-form">
             <form id="new-coffee">
-                <h4>Add New Coffee</h4>
+                <h4 style="font-style: sans-serif;font-size: 25px; text-align:center;"><strong>ADD A DRINK</strong></h4>
                 <label for="new-name">Drink Name: </label>
                 <input type="text" name="name" id="new-name">
 

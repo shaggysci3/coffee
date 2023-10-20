@@ -151,18 +151,6 @@
       }
     },
     {
-      "name": "catfee",
-      "image": "https://as2.ftcdn.net/v2/jpg/00/84/33/07/1000_F_84330731_iQ5d6tZnQDON0u3KFXYCefeWeLJ5ypaX.jpg",
-      "price": 15,
-      "creamer": 5,
-      "sugar": 5,
-      "espresso": 5,
-      "milk": 5,
-      "temp": "hot",
-      "description": "15g of protean 1$ per gram",
-      "id": 13
-    },
-    {
       "name": "drink example",
       "image": "https://as1.ftcdn.net/v2/jpg/03/99/49/26/1000_F_399492699_sMyrpF3GfYB8q096P8op53B6XXWkqiaZ.jpg",
       "price": 50,
